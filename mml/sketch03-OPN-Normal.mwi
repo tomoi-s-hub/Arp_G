@@ -1,0 +1,33 @@
+'{ 
+ Title=sketch #3 分散発音サンプル (単音)
+ DataCreator=Tomoi,S.
+ Composer=Tomoi,S.
+ Comment=FMP7 V7.10d
+ ClockCount=192
+ PartOPNA=A0-G1
+}
+
+'A0 T150 
+'A01B01C01D01 @000 o5 v64 q8 l4  {+fcgd}
+'E01F01G01    @000 o5 v64 q8 l2. {+fcgd}
+
+;移調 . LFO 1 CH[PQRS] ,2 TYPE [VTW1234P] ,3 delay ,4 speed ,5 rate ,6 depth ,7 wavetype [0-4] ,8 sync ,9 offset
+'A0B0C0D0E0F0G0 K0 D 0 MPW4,#0,2,10,1,4,0,6 MQP#0,8,1,1,0,0, 45
+'A1B1C1D1E1F1G1 K0 D 7 MPW4,#0,2,10,1,4,0,6 MQP#0,8,1,1,0,0,-45
+
+;   分散発音パート(★単音のみ, 調性記号は前方に記載済)
+'A01 | c ea> e<ae | c=f a> d <af | <b>f a>d=<af | <e>d= f >c <g&g&g 
+
+;    和音パート
+'E01 |>a &a  | g  f  |  d= e  |  f  g  
+'F01 |>e &e  | d &d  |  d=&d= |  d=&d= 
+'G01 | c &c  | c=&c= |< b &b  |> e &e  
+
+'@ FB 000 ; BELL
+;  AR , DR , SR , RR , SL , TL , KS , ML , DT , SE , AM
+'@ 027, 004, 000, 001, 015, 035, 001, 003, 003, 000, 000
+'@ 021, 007, 000, 003, 015, 000, 002, 001, 004, 000, 000
+'@ 028, 006, 000, 006, 014, 038, 001, 014, 007, 000, 000
+'@ 030, 008, 006, 004, 005, 000, 000, 004, 007, 000, 000
+'@ 004, 001
+

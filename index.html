@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja-JP" lang="ja-JP">
+	<head>
+		<!--
+	Created by Artisteer v2.6.0.36391
+	Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+		-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>分散発音ジェネレータ</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="art-main">
+			<div class="art-sheet">
+				<div class="art-sheet-tl"></div>
+				<div class="art-sheet-tr"></div>
+				<div class="art-sheet-bl"></div>
+				<div class="art-sheet-br"></div>
+				<div class="art-sheet-tc"></div>
+				<div class="art-sheet-bc"></div>
+				<div class="art-sheet-cl"></div>
+				<div class="art-sheet-cr"></div>
+				<div class="art-sheet-cc"></div>
+				<div class="art-sheet-body">
+					<div class="art-header">
+						<div class="art-header-png"></div>
+						<div class="art-header-jpeg"></div>
+						<div class="art-logo">
+							<h1 id="name-text" class="art-logo-name"><a href="/mg/">分散発音ジェネレータ</a></h1>
+						</div>
+					</div>
+					<div class="art-content-layout">
+						<div class="art-content-layout-row">
+							<div class="art-layout-cell art-sidebar1">
+								<div class="art-vmenublock">
+									<div class="art-vmenublock-body">
+										<div class="art-vmenublockcontent">
+											<div class="art-vmenublockcontent-body">
+												<ul class="art-vmenu">
+	<li><a href="#t01"><span class="l"></span><span class="r"></span><span class="t">はじめに</span></a></li>
+	<li><a href="#t02"><span class="l"></span><span class="r"></span><span class="t">できること</span></a></li>
+	<li><a href="#t03"><span class="l"></span><span class="r"></span><span class="t">分散発音とは</span></a></li>
+	<li><a href="#t04"><span class="l"></span><span class="r"></span><span class="t">発音サンプル</span></a></li>
+	<li><a href="#t05"><span class="l"></span><span class="r"></span><span class="t">発音サンプルの解説</span></a></li>
+	<li><a href="#t06"><span class="l"></span><span class="r"></span><span class="t">制限事項</span></a></li>
+	<li><a href="#t07"><span class="l"></span><span class="r"></span><span class="t">ダウンロード</span></a></li>
+	<li><a href="#t08"><span class="l"></span><span class="r"></span><span class="t">注意事項</span></a></li>
+	<li><a href="#t09"><span class="l"></span><span class="r"></span><span class="t">認識する文字列の一覧・規則</span></a></li>
+	<li><a href="#t10"><span class="l"></span><span class="r"></span><span class="t">画面の説明</span></a></li>
+	<li><a href="#t11"><span class="l"></span><span class="r"></span><span class="t">動作環境</span></a></li>
+	<li><a href="#t12"><span class="l"></span><span class="r"></span><span class="t">おわりに</span></a></li>
+	<li><a href="#t13"><span class="l"></span><span class="r"></span><span class="t">開発履歴</span></a></li>
+												</ul>
+												<div class="cleared"></div>
+											</div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="art-layout-cell art-content">
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t01" href="#t01" rel="bookmark" title="クリックで項目のトップから表示">はじめに</a></h2>
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>このソフトウェアは、分散発音記述を生成するプロセッサーです。</p>
+	<p>分散発音は、シンセキーボードではポピュラーな演奏表現で、1発音毎に空いている音源を使用して演奏します。</p>
+	<p>これをシミュレートする記述を生成し、減衰や残響の過程が含まれる、より豊かな演奏表現を実現します。</p>
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+												<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月2日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t02" href="#t02" rel="bookmark" title="クリックで項目のトップから表示">できること</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>一部の機能を除き、特定のドライバに依存しない形で分散発音記述を生成します。</p>
+	<p>.Net Framework2レベルの環境で動作し、以下の機能を持ちます。</p>
+	<ol>
+	<li>単音のMMLを入力すると、分散発音可能なMMLを生成する</li>
+	<li>タイピングにより内容が生成され、任意に発音数の変更が可能</li>
+	<li>MML内容の追加削除に対し高速に追従</li>
+	<li>タイピング、貼り付け、ドロップなどの入力に対応し、結果はクリップボードへ即時反映(ON/OFF可能)</li>
+	<li>ドライバの書式に合わせた行ヘッダの生成または任意入力をサポート(仮)</li>
+	<li>コマンドライン生成時はファイルへ出力可能</li>
+	</ol>
+	<p>もし分散発音を手で入力した経験のある方であれば、2と3については、え、まさかね、と思いがちですが、それを実現しています。</p>
+	<p>手入力による生成では、わずかな修正で全域が書き直しになる場合もあり、例えば作成中に発音数を変えることは困難でした。</p>
+	<p>このツールでは生成量に依存はありますが、実用的な範囲のものであればほぼ一瞬で生成が完了します。</p>
+	<p>また、MMLの先頭や入力途中の追加削除にも追従します。</p>
+	<p>(手作業ではこのような編集は事実上不可能でした。)</p>
+	<p>MML入力エリアでBackSpaceやDelなどを押した時の動きを見ると、その速度を実感できるかもしれません。</p>
+	<p>入力行数が増えると若干レスポンスは下がりますが、それでも非常に高速です。</p>
+	<p>少ないタイプとクリックで必要な結果が得られ、データの再利用が容易になっています。</p>
+
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+												<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t03" href="#t03" rel="bookmark" title="クリックで項目のトップから表示">分散発音とは</a></h2>
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>分散発音を書いたことがない方のために、作成される内容を簡単に説明します。</p>
+	<p>発音に必要なトラックを確保し、1発音ごとにトラックを切り替え、発音されないトラックにはすべて休符を設定します。</p>
+	<p>残響を除き、アクティブに発音されるトラックは1つです。</p>
+	<p>若干残響のある音色を使用することがポイントになりますが、既存の音色をうまくアレンジしてみてください。</p>
+	<p>このように設定することで、シンセキーボードの発音に近い、過渡的な音の表情を活かした発音を行うことができます。</p>
+	<p>(本物は空きのチャネルを見つけて発音しますが、そこまでは模倣せず、発音ごとに次のトラックに切り替えることで処理を単純化し、記述に汎用性を持たせています。)</p>
+	<hr />
+	<p>入力したMMLは次のように変換されます。</p>
+	<code> -----------<br /> cde<br /> -----------</code>
+	<p>という単音のMMLを入力した場合、発音数を3に設定した場合は</p>
+	<code> -----------<br /> crr<br /> rdr<br /> rre<br /> -----------</code>
+	<p>のように、複数のパートに展開されます。</p>
+	<p>発音数を4として、</p>
+	<p>"l4 o5 a&gt;c+ea&amp;a&amp;a"</p>
+	<p>といったチャイム的な音を表す場合、その表記は</p>
+	<code> ------------------------------------<br /> l4 o5 a&gt;r rr r r<br /> l4 o5 r&gt;c+rr r r<br /> l4 o5 r&gt;r er r r<br /> l4 o5 r&gt;r ra&amp;a&amp;a<br />------------------------------------</code>
+	<p>となります。 </p>
+	<p>ここまでの説明で表現が通じるのであれば、おそらくこのツールに価値を見出せるかと思います。 </p>
+	<p>ちなみに、すべての休符を取り除いた表記は</p>
+	<code> ------------------------------------<br /> l4 o5 a&gt;<br /> l4 o5 &nbsp;&gt;c+<br /> l4 o5 &nbsp;&gt; &nbsp;e<br />l4 o5 &nbsp;&gt;  &nbsp;&nbsp;a&amp;a&amp;a<br />------------------------------------</code>
+	<p>となり、実際に1発音毎にスライドしているだけの処理であることがわかると思います。</p>
+	<p>…ですが、この規則に従ってちょっとした曲を入力しようとすると、軽く死ねるタイピング量になってしまいます。</p>
+	<p>(PC-88を使っていた当時はそれでもやりつづけましたが…)</p>
+	<p>作る前にざっと探してみましたが、現在の音源ドライバではこれに直接的対応しているものが見あたらないため、</p>
+	<p>むしろ、ドライバが対応しなくても実現してしまおう(やってやるぜ！)</p>
+	<p>というつもりで作成しています。</p>
+	<p>※もし、すでにサポートしているドライバをご存じであればぜひお知らせください。</p>
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+												<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月7日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t04" href="#t04" rel="bookmark" title="クリックで項目のトップから表示">発音サンプル</a></h2>
+											<div class="art-postcontent">
+	<p>例として、次のフレーズを聴き比べてみてください。</p>
+	<hr />
+	<p>1.<a href="wave/demo001-01-OPN-normal.mp3">無加工の音</a> , <a href="mml/sketch03-OPN-Normal.mwi">FMP7用ソース</a> *先にこちらから聴くとわかりやすくなります。</p>
+	<p>2.<a href="wave/demo001-01-OPN-DS4.mp3">分散発音記述を行った音</a> , <a href="mml/sketch03-OPN-DS4.mwi">FMP7用ソース</a></p>
+	<hr />
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+												<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月7日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t05" href="#t05" rel="bookmark" title="クリックで項目のトップから表示">発音サンプルの解説</a></h2>
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>1.は分散発音部を単音で演奏しています。音色から想像される、ありがちな音がします。</p>
+	<p>　&nbsp;デモなのでやや意図的ですが、やや安っぽいというか、長く聞きたいと感じる音ではないですね。</p>
+	<p>2.は、1をこのツールを使用して分散発音化したものです。</p>
+	<p>音色を含めて同じものですが、エフェクタでも入れたのでは?と感じられる音になります。</p>
+	<hr />
+	<p>上記のサンプルフレーズの生成にはFMP7というドライバを使用しています。</p>
+	<p>このドライバは優れた能力を持ち、多チャンネルの発音が可能なため、最終的な発音数は若干多めに確保しています。</p>
+	<p>以前のPCの音源を鳴らす場合には、より厳しい発音数の制約があるため、発音数は2～4程度が無難ですが、</p>
+	<p>技術的には発音数2から効果が得られますので、音源数に合わせて柔軟にスケールすることができます。</p>
+	<hr />
+	<p>*発音数とは、分散発音に使用するトラック(パート)数を示すものです。<br />&nbsp;&nbsp;対象のトラックが複数の音源に割り当てられている場合には、その係数分の音源が使用されます。<br />&nbsp;&nbsp;発音数の残りにご注意ください。</p>
+
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t06" href="#t06" rel="bookmark" title="クリックで項目のトップから表示">制限事項</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>このツールでは、以下のことはできません。</p>
+	<ul><li>MMLの文法エラーを指摘しません</li></ul>
+	<p>MMLコンパイラではないので、分散発音化に必要な内容以外はスキャンしません。</p>
+	<p>エラーのあるMMLや、生成結果がエラーになる内容を記載しても、そのまま生成します。</p>
+	<p>変だな?と思ったら、まず、元のMMLが正常に演奏できるか確認してください。</p>
+	<ul><li>ドライバの仕様上、1パート(トラック)に1つしか置けない指定を書いた場合、正しく演奏されない場合があります</li></ul>
+	<p>このツールの分散発音化処理では、音階として認識されない要素は全てのパートに複製されます。</p>
+	<p>たとえば、トラックに一つしか置けないものが書かれていると、エラーの原因になるか、正しく演奏されない可能性があります。</p>
+	<p>そのような指定があることがわかっている場合は、それより前方に記述するか、生成後に手動で埋め込んでください。</p>
+	<ul><li>ループ記述を処理する場合、ループ中の処理・出口と分散発音の処理位置は同期しません</li></ul>
+	<p>ループ記述は、関連する記号を含めて複製されます。</p>
+	<p>このため、演奏自体は指定通りに行われますが、ループ中・脱出時に分散発音の位置が同期しなくなることがあります。</p>
+	<p>実際の生成結果を見ていただくとイメージしやすいと思いますが、音色と状態によっては、聴感上分かる程度に残響の途切れが発生する可能性があります。</p>
+	<p>発音数が3より多い場合は、ループ脱出時の音を少し長く発音することで違和感を少なくすることができます。</p>
+	<p>発音数が3より少ない場合は、音色とパート構成によりますが、それ以外のパートの発声を工夫することでカバーできる場合があります。</p>
+	<p>根本的にこの問題を回避したい場合は、ループを事前に展開することをお勧めします。</p>
+	<p>以上の制限・制約がありますが、基本的にはこのぐらいです。</p>
+	<p>うまく鳴らない場合は cdefg 程度のとりあえず鳴るものを作り、雰囲気をつかんでみてください。</p>
+											</div>
+
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+
+								<hr />
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t07" href="#t07" rel="bookmark" title="クリックで項目のトップから表示">ダウンロード</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>以下のプログラムがダウンロード可能です。</p>
+	<p>現在は、.NET Framework 2版のみが作成されています。</p>
+	<p>*コマンドライン専用版と.NET Framework 4版については作成予定です。</p>
+	<p>現在.NET Framework2を入れていないか、4のみ入れていて動作しないという方は、3.51(3.5 SP1)をインストールするか、Windowsの機能から3.5を有効にしてください。</p>
+	<p>どうしても環境を変更できない場合、ご連絡いただければ、製作の優先順位の参考にします。</p>
+	<hr />
+	<p>・Microsoft .NET Framework 2</p>
+	<p>　GUI版</p>
+	<p>　<a href="http://www.vector.co.jp/vpack/browse/person/an056665.html" title="ダウンロード(作者ページヘ)">ダウンロード(Vector)</a> ←これ</p>
+	<p>　コマンドライン専用版</p>
+	<p>　(作成中)</p>
+	<hr />
+	<p>・Microsoft .NET Framework 4 (予定)</p>
+	<p>　GUI版(作成中)</p>
+	<p>　コマンドライン専用版(作成中)</p>
+
+											</div>
+
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月7日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t08" href="#t08" rel="bookmark" title="クリックで項目のトップから表示">注意事項</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>分散発音を効果的に作成する上での注意点を記載します。</p>
+	<p>発音数の設定値は、音源数が多い環境では、値を増やすだけで表現が向上する場合があります。</p>
+	<p>しかし、効果に関する要素はそれだけではありません。</p>
+	<p>特性をつかまないまま量を増やすと、トラックや音源を過剰に占有し、期待する効果が出ないこともあります。</p>
+	<p>既存曲に組み込む場合については、できるだけ少ない設定値の状態で一度演奏してみることをお勧めします。</p>
+	<p>最小限の発音数で無理なく聞こえる設定をつかむと、発音数に制約のある音源を使う場合でも、効果を無理なく楽しめるようになります。</p>
+	<hr />
+	<p>現在、このプログラムは開発中のような気がしていますが、作者の性格上かなり放置中です。</p>
+	<p>予期せぬエラーに遭遇した場合や、機能面についてお気づきの点がありましたら、(できれば)具体的な症状やスクリーンショット、再現に必要なテキストを添えて、後述の連絡先までお知らせを頂ければ幸いです。</p>
+											</div>
+
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t09" href="#t09" rel="bookmark" title="クリックで項目のトップから表示">認識する文字列の一覧・規則</a></h2>
+											<div class="art-postcontent">
+
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>このツールは、音階データが以下の順序で書かれていることを期待しています。</p>
+	<p>これは、MMLとしては特別な制約ではないと考えています。</p>
+	<p>もし内容に疑問があればお知らせください。</p>
+	<hr />
+	<ol>
+		<li>音階として認識される文字列<br />　　　例： cdefgabCDEFGAB<br />　　　MMLが主に英音階なので、これに合わせています。</li>
+		<li>シャープ・フラット記号<br />　　　例：+ または -</li>
+		<li>音長 (音の長さ)を示す任意長の数字(付点は後述の全パートコピー対象文字列となり、別扱いです。)<br />　　　例：c4. c32 c30000 c8..</li>
+		<li>音階と音長間の任意の空白、およびその他の任意の空白の挿入は許容される</li>
+	</ol>
+	<p>この例に当てはまらないものとしては、音階の絶対値指定などが考えられますが、これらは安定版を作ってから対応したいと思います。</p>
+	<p>音階以外に特別に処理を行う文字列として、タイ記号 &amp; と ^ があります。</p>
+	<p>^のあとに音長が来るか音階が来るかは線引きが微妙なため、後にモード化する予定です。</p>
+	<p>以上です。</p>
+	<hr />
+	<p>これ以外の文字列は、分散発音に関与しないものとして各パートに単純に複製されます。</p>
+	<p>例えば、オクターブ上下記号は書いたまま複製されますので、結果的にドライバ側のオクターブの解釈に依存しません。</p>
+	<p>この、音階以外の内容を単純に複製する機能によって、ある程度の表記の多様性をカバーしています。</p>
+	<hr />
+	<ul>
+		<li>各項目の基準について
+			<ol>
+				<li>「音階」として認識する文字列の基準<br />　　　いわゆるMMLとして認知されている音階(小文字 cdefgab , 大文字 CDEFGAB )を採用しています。<br />　　　ドライバにより大・小文字音階の一方しか認識しない場合がありますので、演奏可能なものを使ってください。</li>
+				<li>「シャープ・フラット記号」について<br />　　　「ダブルシャープ」や「ナチュラル」を指定可能なドライバがあります<br />　　　現在は固有表記とみなして対応していませんが、需要が多い場合は可能な限り対応したいと思います。</li>
+				<li>音長について<br />　　　数字であれば内容は問いません。100000などと書いてもOKです。(カウンタ指定を考慮しています。)</li>
+				<li>符点(ピリオド)は休符表現にもコピーされなければ効果がないので、全てのパートに複製されます。</li>
+			</ol>
+		</li>
+	</ul>
+
+	<p>その他、なるべくMML製作者の意図・思考を阻害しない方向で記載できるようにしていますが、現在のところは汎用性の高い記載に限って処理しています。</p>
+	<p>現時点では、下記のような記述を想定しています。</p>
+	<code> ------------------------------------<br /> cdefg<br /> cf+a<br /> c 1c2 c  3<br /> c+1f+2a3<br /> c d e <br /> c+1 d-2 e3<br />CDEFG<br />CF+A<br />C1C2C3<br />------------------------------------</code>
+	<p>実際にはこれより幅広い記述に対応できますが、基本的には特別な処理は入れていません。</p>
+	<p>変換結果について、「(MMLとして)常識的なものが正しく変換されない」問題がある場合は対処したいと考えています。</p>
+	<p>ただし、その内容が「制限事項」で述べたものに該当する場合は、ご期待に添えないことがあります。予めご了承ください。</p>
+
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月7日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t10" href="#t10" rel="bookmark" title="クリックで項目のトップから表示">画面の説明</a></h2>
+
+											<div class="art-postcontent">
+												<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+												<p>(作成中)</p>
+												<p><a href="images/sc_01.png"><img src="images/sc_01s.png" width="600" height="405" alt="画面イメージ1" /></a></p>
+												<hr />
+												<p></p>
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月3日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t11" href="#t11" rel="bookmark" title="クリックで項目のトップから表示">動作環境</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>このツールは、次の環境で動作します。</p>
+	<p>・Microsoft .NET Framework 2版</p>
+	<p>　Microsoft .NET Framework 2.0 または互換環境(*)</p>
+	<p>・Microsoft .NET Framework 4版(予定)</p>
+	<p>　Microsoft .NET Framework 4.0 または互換環境</p>
+	<p>*互換環境での動作を保証するものではありません。</p>
+	<hr />
+	<p>作成されたデータの演奏には、英音階(c～b)をサポートしたMML演奏環境が必要です。</p>
+	<p>適切な演奏効果を得るためには、適宜減衰・残響が設定された音色が必要となります。</p>
+											</div>
+
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月3日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t12" href="#t12" rel="bookmark" title="クリックで項目のトップから表示">おわりに/連絡先</a></h2>
+
+											<div class="art-postcontent">
+	<img class="art-article" src="images/ma-symbol.png" alt="an image" style="float:left;border:0;margin: 1em 1em 0 0;" />
+	<p>分散発音ジェネレータ ソフトウェアは、フリーソフトです。</p>
+	<p>再配布する場合、最低限の実費以外の制約を付けないでください。</p>
+	<p>使用について制約は設けていませんが、使用した結果、いかなる損害が発生しても責任を負いません。</p>
+	<p>また、何らかの理由で使用することができなかった場合も同じです。</p>
+	<p>連絡先は以下の通りです。</p>
+	<hr />
+	<p>email:<br /><img src="images/address1.png" alt="電子メール アドレス" /><br />　　友井 純夫(ともいすみお)宛</p>
+	<p>Twitter:<br />&nbsp;&nbsp;@Tomoi_S</p>
+	<hr />
+	<p>※emailアドレスはspam/OCRの対策をしています。お手数ですが過不足を補い、Gmailで通る内容に書きなおしてください。</p>
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<hr />
+
+								<div class="art-post">
+									<div class="art-post-body">
+										<div class="art-post-inner art-article">
+											<h2 class="art-postheader"><a id="t13" href="#t13" rel="bookmark" title="クリックで項目のトップから表示">開発履歴 / 謝辞</a></h2>
+
+											<div class="art-postcontent">
+	<p>開発履歴</p>
+	<p>0.4.0.0 2014.03.02 複数行MMLに対応、生成を高速化。(公開版)</p>
+	<p>*0.4.0.0から横800ドット環境(タブレット縦持ち時に多い解像度)に対応</p>
+	<p>ベータ版</p>
+	<p>0.3.4.0 2013.11.20 オリジナルMMLの同時出力対応、U/Iの再整理。</p>
+	<p>0.3.0.0 2012.07.29 詳細修正・コマンドライン処理部を作成。(公開版)</p>
+	<p>0.2.0.0 2012.07.22 公開を前提としたU/Iを作成し、仮レイアウトを構成。</p>
+	<p>0.1.0.0 2012.06.20 エンジン部を組み込んだ最初期版。</p>
+	<p>プロトタイプ</p>
+	<p>正規表現の音階判別式と128分散発音の生成式のみ。</p>
+	<hr />
+	<p>謝辞</p>
+	<p>FMP7のリリースを契機に再びMMLを書くようになり、その昔に書いた分散発音の音源を編集しようとした時に、</p>
+	<p>「今だったらこれを簡単に書けるようになるかも…」</p>
+	<p>と思い、このツールを作成することになりました。</p>
+	<p>ターゲットは引き続き汎用としていますが、FMP7に出会ったことで、この発音技術についてもう一度考える機会ができたこと、<br />他の方にも便利に使っていただける可能性があると感じ、U/Iを整備するきっかけとなりましたので、深く感謝しています。</p>
+	<hr />
+	<p>使用したツール</p>
+	<p>プログラム … Visual Studio 2010,2013 (2010互換プロジェクト)</p>
+	<p>アイコン生成 … IcoFX1.6</p>
+	<p>サイトデザイン … Artisteer2 テンプレート出力後、手編集</p>
+	<hr />
+											</div>
+											<div class="cleared"></div>
+											<div class="art-postheadericons art-metadata-icons">
+											<p><img class="art-metadata-icon" src="images/postdateicon.png" width="17" height="18" alt="投稿日付" />2014年3月6日 | <img class="art-metadata-icon" src="images/postauthoricon.png" width="14" height="14" alt="投稿者名" /><span title="Tomoi,S.の投稿">Tomoi,S.</span></p>
+											</div>
+											<div class="cleared"></div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+
+								<div class="cleared"></div>
+								<div class="art-footer">
+									<div class="art-footer-t"></div>
+									<div class="art-footer-l"></div>
+									<div class="art-footer-b"></div>
+									<div class="art-footer-r"></div>
+									<div class="art-footer-body">
+										<div class="art-footer-text">
+											<p><!-- <a href="#">Contact Us</a>|<a href="#">このサイトについて</a><br /> -->Copyright © 2012-2014 Tomoi,S.<br />私に著作権のあるもの以外は、各著作者が権利を有しています。</p>
+										</div>
+										<div class="cleared"></div>
+									</div>
+								</div>
+								<div class="cleared"></div>
+							</div>
+						</div>
+					</div>
+					<div class="cleared"></div>
+						<p class="art-page-footer"></p>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
